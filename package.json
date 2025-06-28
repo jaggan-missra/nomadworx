@@ -1,0 +1,42 @@
+{
+  "name": "nomadworx",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "sync:setup": "chmod +x scripts/setup-auto-sync.sh && bash scripts/setup-auto-sync.sh",
+    "sync:status": "bash scripts/manage-sync.sh status",
+    "sync:logs": "bash scripts/manage-sync.sh logs",
+    "sync:test": "bash scripts/manage-sync.sh test",
+    "sync:stop": "bash scripts/manage-sync.sh stop",
+    "sync:monitor": "bash scripts/monitor-sync.sh",
+    "sync:diagnose": "bash scripts/diagnose-sync.sh",
+    "sync:force": "bash scripts/force-sync.sh"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2"
+  }
+}
